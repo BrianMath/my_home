@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Unignore git files
+!.gitignore
+
+# Nvim config files
+!.config/
+!.config/nvim/
+!.config/nvim/**
+
