@@ -9,3 +9,10 @@
 !.config/nvim/
 !.config/nvim/**
 
+# ls colors 
+!lscolors.sh
+
+# Powerlevel10k
+!.p10k.zsh
+
+
