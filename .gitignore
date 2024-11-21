@@ -15,4 +15,8 @@
 # Powerlevel10k
 !.p10k.zsh
 
+# Test files
+!tests/
+!tests/**
+tests/stupid-machines/
 
