@@ -20,3 +20,6 @@
 !tests/**
 tests/stupid-machines/
 
+# Zsh config
+!.zshrc
+
