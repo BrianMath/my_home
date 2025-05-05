@@ -19,8 +19,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # Path to homebrew installations
 export HOMEBREW="/home/linuxbrew/.linuxbrew/bin"
 
+# Path to global npm modules
+export NPM="/home/linuxbrew/.linuxbrew/lib/node_modules"
+
 # Path to my scripts
-export PATH=$PATH:$HOMEBREW
+export PATH=$PATH:$HOMEBREW:$NPM
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -124,6 +127,7 @@ alias coisas="cd /mnt/d/brian/Coisas/"
 alias node="$HOMEBREW/node"
 alias e="exit"
 alias d="cd /mnt/d/"
+alias c="cd /mnt/c/"
 alias explorer="explorer.exe ."
 alias fd="fdfind -H"
 
