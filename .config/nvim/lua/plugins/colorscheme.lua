@@ -7,7 +7,12 @@ return {
 			local configs = require("catppuccin")
 
 			configs.setup({
-				no_italic = true
+				flavour = "mocha",
+				no_italic = true,
+				integrations = {
+					neotree = true,
+					treesitter = true
+				}
 			})
 		end,
 		init = function()
