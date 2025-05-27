@@ -141,6 +141,8 @@ alias chrome="_chromeopen"
 alias ghce="gh copilot explain"
 alias ghcs="gh copilot suggest"
 
+alias wallpaper="pokemon"
+
 # lscolors.sh path
 source ~/lscolors.sh
 
