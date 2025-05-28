@@ -15,15 +15,17 @@ return {
 
 			local neotree = require("neo-tree")
 			neotree.setup({
+				sources = { "filesystem", "buffers", "git_status" },
 				source_selector = {
 					winbar = false,
-					statusline = true,
-					sources = {
-						{ source = "filesystem" },
-						{ source = "buffers" },
-						{ source = "git_status" }
-					}
-				}
+					statusline = true
+				},
+				filesystem = {
+					follow_current_file = {
+						enabled = true
+					},
+					use_libuv_file_watcher = true,
+				}	
 			})
 		end
 	}
