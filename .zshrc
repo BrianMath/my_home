@@ -25,6 +25,9 @@ export NPM="/home/linuxbrew/.linuxbrew/lib/node_modules"
 # Path to my scripts
 export PATH=$PATH:$HOMEBREW:$NPM
 
+# Path to VCPKG_ROOT
+export VCPKG_ROOT=~/vcpkg
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
