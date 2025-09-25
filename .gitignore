@@ -19,6 +19,7 @@
 !tests/
 !tests/**
 tests/stupid-machines/
+tests/simple_flex_bison_calculator
 
 # Zsh config
 !.zshrc
