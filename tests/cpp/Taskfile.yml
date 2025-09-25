@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    ./build/main
+  
+  template:
+    cmds:
+      - mkdir -p build
+      - g++ template.cpp -o build/main
+    sources:
+      - template.cpp
+    # silent: true
+  
+  clean:
+    preconditions:
+      - test -d build
+    cmds:
+      - rm -rf build/*
