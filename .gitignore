@@ -20,10 +20,10 @@
 !tests/**
 tests/stupid-machines/
 tests/simple_flex_bison_calculator
+tests/dragon-curve-llvm
+tests/emscripten
+tests/programaticas
 
 # Zsh config
 !.zshrc
-
-!wasmtime-c-api/
-!wasmtime-c-api/**
 
