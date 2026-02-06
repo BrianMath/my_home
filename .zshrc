@@ -6,8 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # export JAVA_HOME="/mnt/c/Program Files/Java/jdk-20/bin/"
-alias java="java.exe"
-alias javac="javac.exe"
+# alias java="java.exe"
+# alias javac="javac.exe"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.cargo/bin:$HOME/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin:/sbin:$PATH
@@ -124,7 +124,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="ls -AvF --color=auto"
+alias ls="ls -AvF --group-directories-first --color=auto"
 alias z="nvim ~/.zshrc"
 alias coisas="cd /mnt/d/brian/Coisas/"
 alias node="$HOMEBREW/node"
@@ -134,6 +134,10 @@ alias c="cd /mnt/c/"
 alias explorer="explorer.exe ."
 alias fd="fdfind -H"
 
+# FIREFOX
+alias firefox="/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+
+# CHROME
 alias chr="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
 # Função para abrir um arquivo no chrome
 _chromeopen() {
@@ -165,3 +169,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/brian/.opam/opam-init/init.zsh' ]] || source '/home/brian/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
