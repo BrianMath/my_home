@@ -24,3 +24,6 @@ tests/simple_flex_bison_calculator
 # Zsh config
 !.zshrc
 
+!wasmtime-c-api/
+!wasmtime-c-api/**
+
