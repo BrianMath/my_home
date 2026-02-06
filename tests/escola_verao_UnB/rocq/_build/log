@@ -1,0 +1,407 @@
+# dune build --watch
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/brian/.cache/dune/db
+# Workspace root: /home/brian/tests/escola_verao_UnB/rocq
+# Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/brian/.opam/default/bin/ocamlc.opt -config > /tmp/dune_c0daaf_output
+$ /home/brian/.opam/default/bin/rocq --config > /tmp/dune_a93f4f_output
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 35, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 1-9:
+> Error: Syntax error: 'with' expected after [ltac_expr] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 1-9:
+> Error: Syntax error: [match_list] expected after 'with' (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 1-9:
+> Error: Syntax error: [match_list] expected after 'with' (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 1-9:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 33, characters 9-11:
+> Error: Syntax error: [uconstr] expected after 'refine' (in [simple_tactic]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 33, characters 9-11:
+> Error: Syntax error: [uconstr] expected after 'refine' (in [simple_tactic]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 35, characters 2-3:
+> Error: Syntax error: [term level 200] expected after '(' (in [term]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 38, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 35, characters 2-3:
+> Error: Syntax error: [term level 200] expected after '(' (in [term]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 2-3:
+> Error: Syntax error: 'end' expected after [branches] (in [term_match]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 2-3:
+> Error: Syntax error: '|' or '=>' expected (in [eqn]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 2-3:
+> Error: Syntax error: '|' or '=>' expected (in [eqn]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 36, characters 2-3:
+> Error: Syntax error: 'end' expected after [branches] (in [term_match]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 2-3:
+> Error: Syntax error: 'end' expected after [branches] (in [term_match]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 2-3:
+> Error: Syntax error: 'end' expected after [branches] (in [term_match]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 2-3:
+> Error: Syntax error: 'end' expected after [branches] (in [term_match]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 6-7:
+> Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 37, characters 6-7:
+> Error: Syntax error: ',' or ')' expected after [term level 200] (in [term]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 41, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 42, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 42, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 42, characters 1-9:
+> Error:
+> Syntax error: [ltac_use_default] expected after [tactic] (in [tactic_command]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 42, characters 1-9:
+> Error:
+> Syntax error: [ltac_use_default] expected after [tactic] (in [tactic_command]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 42, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 43, characters 1-34:
+> Error: Nested proofs are discouraged and not allowed by default. This error
+> probably means that you forgot to close the last "Proof." with "Qed." or
+> "Defined.". If you really intended to use nested proofs, you can do so by
+> turning the "Nested Proofs Allowed" flag on.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 45, characters 0-11:
+> Error: Command not supported (Open proofs remain)
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 45, characters 0-11:
+> Error: Command not supported (Open proofs remain)
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 46, characters 0-11:
+> Error: Command not supported (Open proofs remain)
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 46, characters 0-11:
+> Error: Command not supported (Open proofs remain)
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 46, characters 10-11:
+> Error: Syntax error: 'with' expected after [ltac_expr] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 46, characters 10-11:
+> Error: Syntax error: '=>' expected after [match_pattern] (in [match_rule]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 10-11:
+> Error: Syntax error: '=>' expected after [match_pattern] (in [match_rule]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 10-11:
+> Error: Syntax error: '=>' expected after [match_pattern] (in [match_rule]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: '=>' expected after [match_pattern] (in [match_rule]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: '=>' expected after [match_pattern] (in [match_rule]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 10-11:
+> Error: Syntax error: 'end' expected after [match_list] (in [ltac_expr]).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 46, characters 11-14:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 11-14:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 11-14:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 12-15:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 12-15:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 47, characters 12-15:
+> Error: The reference add was not found in the current environment.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 48, characters 1-5:
+> Error: No focused proof (No proof-editing in progress).
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> mul =
+> fix mul (n1 n2 : nat) {struct n1} : nat :=
+>   match n1 with
+>   | Z => Z
+>   | S n3 => add n2 (mul n3 n2)
+>   end
+>      : nat -> nat -> nat
+>
+> Arguments mul n1 n2
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 43, characters 1-98:
+> Error: Cannot guess decreasing argument of fix.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> File "./src/nat_playground.v", line 43, characters 1-97:
+> Error: Cannot guess decreasing argument of fix.
+>
+[1]
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> mul =
+> fix mul (n1 n2 : nat) {struct n1} : nat :=
+>   match n1 with
+>   | Z => Z
+>   | S n' => add n2 (mul n' n2)
+>   end
+>      : nat -> nat -> nat
+>
+> Arguments mul n1 n2
+$ (cd _build/default/src && /home/brian/.opam/default/bin/rocq dep -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R . Verao -dyndep opt -vos Prelude/Checks.v nat_playground.v) > _build/default/src/.Verao.theory.d
+$ (cd _build/default && /home/brian/.opam/default/bin/rocq compile -q -w -deprecated-native-compiler-option -w -native-compiler-disabled -native-compiler ondemand -boot -R /home/brian/.opam/default/lib/coq/theories Corelib -Q /home/brian/.opam/default/lib/coq/user-contrib/Stdlib Stdlib -R src Verao src/nat_playground.v)
+> mul =
+> fix mul (n1 n2 : nat) {struct n1} : nat :=
+>   match n1 with
+>   | Z => Z
+>   | S n' => add n2 (mul n' n2)
+>   end
+>      : nat -> nat -> nat
+>
+> Arguments mul n1 n2

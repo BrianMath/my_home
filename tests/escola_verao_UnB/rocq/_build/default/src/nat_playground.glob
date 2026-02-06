@@ -1,0 +1,242 @@
+DIGEST 96ef7186f64314dd334324d1d6c18346
+FVerao.nat_playground
+R34:39 Verao.Prelude.Checks <> <> lib
+mod 50:55 <> my_nat
+ind 69:71 my_nat nat
+constr 87:87 my_nat Z
+constr 99:99 my_nat S
+R91:93 Verao.nat_playground <> nat:1 ind
+R106:109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R103:105 Verao.nat_playground <> nat:1 ind
+R110:112 Verao.nat_playground <> nat:1 ind
+scheme 69:71 my_nat nat_rect
+scheme 69:71 my_nat nat_ind
+scheme 69:71 my_nat nat_rec
+scheme 69:71 my_nat nat_sind
+def 126:128 my_nat add
+R137:139 Verao.nat_playground my_nat nat ind
+binder 131:131 <> n:3
+binder 133:133 <> m:4
+R144:146 Verao.nat_playground my_nat nat ind
+R158:158 Verao.nat_playground <> n:3 var
+R169:169 Verao.nat_playground my_nat Z constr
+R174:174 Verao.nat_playground <> m:4 var
+R180:180 Verao.nat_playground my_nat S constr
+R188:188 Verao.nat_playground my_nat S constr
+R191:193 Verao.nat_playground <> add:5 def
+R198:198 Verao.nat_playground <> m:4 var
+prf 215:221 my_nat add_Z_l
+R239:241 Verao.nat_playground my_nat nat ind
+binder 235:235 <> m:7
+R252:254 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R245:247 Verao.nat_playground my_nat add def
+R249:249 Verao.nat_playground my_nat Z constr
+R251:251 Verao.nat_playground <> m:7 var
+R255:255 Verao.nat_playground <> m:7 var
+prf 315:321 my_nat add_Z_r
+R339:341 Verao.nat_playground my_nat nat ind
+binder 335:335 <> n:8
+R352:354 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R345:347 Verao.nat_playground my_nat add def
+R349:349 Verao.nat_playground <> n:8 var
+R351:351 Verao.nat_playground my_nat Z constr
+R355:355 Verao.nat_playground <> n:8 var
+def 472:475 my_nat pred
+R482:484 Verao.nat_playground my_nat nat ind
+binder 478:478 <> n:9
+R489:491 Verao.nat_playground my_nat nat ind
+R534:534 Verao.nat_playground my_nat Z constr
+R539:539 Verao.nat_playground my_nat Z constr
+R546:546 Verao.nat_playground my_nat S constr
+R534:534 Verao.nat_playground my_nat Z constr
+R539:539 Verao.nat_playground my_nat Z constr
+R546:546 Verao.nat_playground my_nat S constr
+def 651:653 my_nat mul
+R664:666 Verao.nat_playground my_nat nat ind
+binder 656:657 <> n1:12
+binder 659:660 <> n2:13
+R671:673 Verao.nat_playground my_nat nat ind
+R685:686 Verao.nat_playground <> n1:12 var
+R696:696 Verao.nat_playground my_nat Z constr
+R701:701 Verao.nat_playground my_nat Z constr
+R706:706 Verao.nat_playground my_nat S constr
+R714:716 Verao.nat_playground my_nat add def
+R718:719 Verao.nat_playground <> n2:13 var
+R722:724 Verao.nat_playground <> mul:14 def
+R729:730 Verao.nat_playground <> n2:13 var
+R757:762 Verao.nat_playground my_nat <> mod
+prf 979:987 <> O_or_succ
+binder 989:989 <> n:16
+R1000:1003 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R996:998 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R995:995 Verao.nat_playground <> n:16 var
+R1005:1007 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1004:1004 Verao.nat_playground <> n:16 var
+R1008:1008 Corelib.Init.Datatypes <> S constr
+R1011:1018 Corelib.Init.Nat <> pred def
+R1020:1020 Verao.nat_playground <> n:16 var
+prf 1681:1690 <> neq_succ_0
+binder 1692:1692 <> n:17
+R1701:1704 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1698:1698 Corelib.Init.Datatypes <> S constr
+R1700:1700 Verao.nat_playground <> n:17 var
+prf 3227:3235 <> mul_0_inv
+binder 3237:3237 <> n:18
+binder 3239:3239 <> m:19
+R3254:3257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3250:3252 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3246:3248 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3245:3245 Verao.nat_playground <> n:18 var
+R3249:3249 Verao.nat_playground <> m:19 var
+R3263:3266 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3259:3261 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3258:3258 Verao.nat_playground <> n:18 var
+R3268:3270 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3267:3267 Verao.nat_playground <> m:19 var
+prf 3317:3323 <> mul_0_l
+binder 3325:3325 <> n:20
+R3336:3338 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3332:3334 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3335:3335 Verao.nat_playground <> n:20 var
+prf 3385:3391 <> mul_0_r
+binder 3393:3393 <> n:21
+R3404:3406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3400:3402 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3399:3399 Verao.nat_playground <> n:21 var
+prf 3454:3461 <> add_swap
+binder 3463:3464 <> n1:22
+binder 3466:3467 <> n2:23
+binder 3469:3470 <> n3:24
+R3490:3492 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3478:3481 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3489:3489 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3476:3477 Verao.nat_playground <> n1:22 var
+R3484:3486 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3482:3483 Verao.nat_playground <> n2:23 var
+R3487:3488 Verao.nat_playground <> n3:24 var
+R3495:3498 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3506:3506 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3493:3494 Verao.nat_playground <> n2:23 var
+R3501:3503 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3499:3500 Verao.nat_playground <> n1:22 var
+R3504:3505 Verao.nat_playground <> n3:24 var
+prf 3552:3561 <> mul_succ_r
+binder 3563:3564 <> n1:25
+binder 3566:3567 <> n2:26
+R3582:3584 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3575:3577 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3573:3574 Verao.nat_playground <> n1:25 var
+R3578:3578 Corelib.Init.Datatypes <> S constr
+R3580:3581 Verao.nat_playground <> n2:26 var
+R3587:3589 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3585:3586 Verao.nat_playground <> n1:25 var
+R3592:3594 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3590:3591 Verao.nat_playground <> n1:25 var
+R3595:3596 Verao.nat_playground <> n2:26 var
+prf 3642:3648 <> mul_1_l
+binder 3650:3650 <> n:27
+R3659:3661 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3655:3657 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3658:3658 Verao.nat_playground <> n:27 var
+R3662:3662 Verao.nat_playground <> n:27 var
+prf 3709:3715 <> mul_1_r
+binder 3717:3717 <> n:28
+R3726:3728 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3722:3724 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3721:3721 Verao.nat_playground <> n:28 var
+R3729:3729 Verao.nat_playground <> n:28 var
+prf 3775:3782 <> mul_comm
+binder 3784:3785 <> n1:29
+binder 3787:3788 <> n2:30
+R3801:3803 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3796:3798 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3794:3795 Verao.nat_playground <> n1:29 var
+R3799:3800 Verao.nat_playground <> n2:30 var
+R3806:3808 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3804:3805 Verao.nat_playground <> n2:30 var
+R3809:3810 Verao.nat_playground <> n1:29 var
+prf 3856:3870 <> mul_add_distr_r
+binder 3872:3873 <> n1:31
+binder 3875:3876 <> n2:32
+binder 3878:3879 <> n3:33
+R3899:3901 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3885:3885 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3893:3896 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3888:3890 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3886:3887 Verao.nat_playground <> n1:31 var
+R3891:3892 Verao.nat_playground <> n2:32 var
+R3897:3898 Verao.nat_playground <> n3:33 var
+R3909:3911 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3904:3906 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3902:3903 Verao.nat_playground <> n1:31 var
+R3907:3908 Verao.nat_playground <> n3:33 var
+R3914:3916 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3912:3913 Verao.nat_playground <> n2:32 var
+R3917:3918 Verao.nat_playground <> n3:33 var
+prf 3964:3972 <> mul_assoc
+binder 3974:3975 <> n1:34
+binder 3977:3978 <> n2:35
+binder 3980:3981 <> n3:36
+R4001:4003 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3989:3992 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4000:4000 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3987:3988 Verao.nat_playground <> n1:34 var
+R3995:3997 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R3993:3994 Verao.nat_playground <> n2:35 var
+R3998:3999 Verao.nat_playground <> n3:36 var
+R4004:4004 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4012:4015 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4007:4009 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4005:4006 Verao.nat_playground <> n1:34 var
+R4010:4011 Verao.nat_playground <> n2:35 var
+R4016:4017 Verao.nat_playground <> n3:36 var
+prf 4063:4071 <> add_inj_r
+binder 4073:4074 <> n1:37
+binder 4076:4077 <> n2:38
+binder 4079:4080 <> n3:39
+R4103:4106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4093:4095 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4088:4090 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4086:4087 Verao.nat_playground <> n1:37 var
+R4091:4092 Verao.nat_playground <> n3:39 var
+R4098:4100 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4096:4097 Verao.nat_playground <> n2:38 var
+R4101:4102 Verao.nat_playground <> n3:39 var
+R4109:4111 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4107:4108 Verao.nat_playground <> n1:37 var
+R4112:4113 Verao.nat_playground <> n2:38 var
+prf 4654:4669 <> mul_add_same_inj
+binder 4671:4671 <> n:40
+binder 4673:4673 <> m:41
+binder 4675:4675 <> p:42
+R4706:4709 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4692:4694 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4682:4685 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4691:4691 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4681:4681 Verao.nat_playground <> n:40 var
+R4687:4689 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4686:4686 Verao.nat_playground <> n:40 var
+R4690:4690 Verao.nat_playground <> p:42 var
+R4696:4699 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4705:4705 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4695:4695 Verao.nat_playground <> m:41 var
+R4701:4703 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R4700:4700 Verao.nat_playground <> m:41 var
+R4704:4704 Verao.nat_playground <> p:42 var
+R4711:4713 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4710:4710 Verao.nat_playground <> n:40 var
+R4714:4714 Verao.nat_playground <> m:41 var
+prf 4780:4789 <> square_inj
+binder 4791:4791 <> n:43
+binder 4793:4793 <> m:44
+R4812:4815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4804:4806 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4800:4802 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4799:4799 Verao.nat_playground <> n:43 var
+R4803:4803 Verao.nat_playground <> n:43 var
+R4808:4810 Corelib.Init.Peano <> ::nat_scope:x_'*'_x not
+R4807:4807 Verao.nat_playground <> m:44 var
+R4811:4811 Verao.nat_playground <> m:44 var
+R4817:4819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4816:4816 Verao.nat_playground <> n:43 var
+R4820:4820 Verao.nat_playground <> m:44 var
