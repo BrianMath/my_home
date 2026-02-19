@@ -127,6 +127,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls="ls -AvF --group-directories-first --color=auto"
 alias z="nvim ~/.zshrc"
 alias coisas="cd /mnt/d/brian/Coisas/"
+alias godot="cd /mnt/d/Games/Godot/"
 alias node="$HOMEBREW/node"
 alias e="exit"
 alias d="cd /mnt/d/"
