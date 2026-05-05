@@ -10,8 +10,18 @@ fi
 # alias javac="javac.exe"
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.cargo/bin:$HOME/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin:/sbin:$PATH
+export PATH=/usr/local/go/bin/:$HOME/.cargo/bin:$HOME/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin:/sbin:$PATH
 # export PATH=/bin:/usr/bin:/usr/local/bin:/sbin:${PATH}
+
+export CLASSPATH=.:$HOMEBREW_CELLAR/antlr/4.13.2/antlr-4.13.2-complete.jar:$CLASSPATH
+
+# Path to sbcl installation
+export SBCLISP_HOME="/home/linuxbrew/.linuxbrew/bin/sbcl"
+
+export PVSPATH="/home/brian/tests/pvs/pvs-7.1.0"
+
+# Path to emacs installation
+export PVSEMACS="/home/linuxbrew/.linuxbrew/bin/emacs"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

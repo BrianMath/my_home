@@ -7,7 +7,7 @@ return {
 			local opts = { noremap = true, silent = true }
 		
 			-- Toggle terminal on/off
-			map('n', "<C-\\>", '<Cmd>ToggleTerm<CR>', opts)
+			map('n', "<A-\\>", '<Cmd>ToggleTerm<CR>', opts)
 		end
 	}
 }
