@@ -13,12 +13,13 @@ fi
 export PATH=/usr/local/go/bin/:$HOME/.cargo/bin:$HOME/bin:/usr/bin:/usr/local/bin:$HOME/.local/bin:/sbin:$PATH
 # export PATH=/bin:/usr/bin:/usr/local/bin:/sbin:${PATH}
 
-export CLASSPATH=.:$HOMEBREW_CELLAR/antlr/4.13.2/antlr-4.13.2-complete.jar:$CLASSPATH
+export CLASSPATH=".:/usr/local/lib/antlr4/antlr-4.13.2-complete.jar:$CLASSPATH"
 
 # Path to sbcl installation
 export SBCLISP_HOME="/home/linuxbrew/.linuxbrew/bin/sbcl"
 
 export PVSPATH="/home/brian/tests/pvs/pvs-7.1.0"
+export PATH="$PATH:$HOME/tests/pvs/pvs-7.1.0"
 
 # Path to emacs installation
 export PVSEMACS="/home/linuxbrew/.linuxbrew/bin/emacs"
@@ -156,10 +157,24 @@ _chromeopen() {
 };
 alias chrome="_chromeopen"
 
+# mkdir + cd
+# A function that creates a folder and immediately enters it
+mkcd() {
+    mkdir -p "$1";
+    cd "$1";
+};
+
 alias ghce="gh copilot explain"
 alias ghcs="gh copilot suggest"
 
 alias wallpaper="pokemon"
+
+# antlr
+alias antlr='java -Xmx500M -cp "/usr/local/lib/antlr4/antlr-4.13.2-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+alias grun='java -Xmx500M -cp "/usr/local/lib/antlr4/antlr-4.13.2-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+
+# g++
+alias g++='g++ -std=c++23'
 
 # lscolors.sh path
 source ~/lscolors.sh

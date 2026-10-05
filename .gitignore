@@ -15,8 +15,6 @@
 # Powerlevel10k
 !.p10k.zsh
 
-# Test files
-
 # Zsh config
 !.zshrc
 
